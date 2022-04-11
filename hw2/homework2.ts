@@ -10,11 +10,11 @@ interface Ishows{
         "type": string,
         "language": "Dutch" | "English",
         "genres": ("Comedy" | "Family" | "Romance" | "Drama")[],
-        "status": string,
-        "runtime": number,
+        "status": string | null,
+        "runtime": number | null,
         "averageRuntime": number,
         "premiered": string,
-        "ended": string,
+        "ended": string | null,
         "officialSite": string | null,
         "schedule": {
             "time": string,
@@ -37,7 +37,7 @@ interface Ishows{
         "webChannel": null,
         "dvdCountry": null,
         "externals": {
-            "tvrage": number |null,
+            "tvrage": number | null,
             "thetvdb": number,
             "imdb": string
         },
