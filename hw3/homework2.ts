@@ -72,29 +72,13 @@ const getAllCars = (arr: IUsers[]): number => {
 
 // 3. ///////////////////////////////////
 
-const sortUsersByEducation = (arr: IUsers[]): IUsers[] => {
-
-    return arr.sort((el) => {
-
-        if(el.hasEducation === true) return -1
-
-        return 1
-    })
-}
+const sortUsersByEducation = (arr: IUsers[]): IUsers[] => arr.filter(el => el.hasEducation === true)
 
 /////////////////////////////////////////
 
 // 4. ///////////////////////////////////
 
-const sortUsersByAnimals = (arr: IUsers[]): IUsers[] => {
-
-    return arr.sort((el) => {
-
-        if(el.animals) return -1
-
-        return 1
-    })
-}
+const sortUsersByAnimals = (arr: IUsers[]): IUsers[] => arr.filter(el => el.animals)
 
 /////////////////////////////////////////
 
